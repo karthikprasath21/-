@@ -1,3 +1,100 @@
-whoami - To know current user.
+whoami
+:: To know current user.
 
-pwd - To know current current directory.
+pwd 🛣
+:: To know current current directory.
+
+clear 🧹
+:: clean terminal screen    (ctrl + l)
+  -x
+:: retrieve logs once scrolled
+
+man 📖
+:: manual for commands
+
+ls 👀
+:: list available contents
+ls _path
+:: peek into the contents of path
+  -l
+:: extended logs
+  -a
+:: To see all contents (including hidden)
+
+  [-al :: combined both -l & -a]
+
+cd
+:: To change directory
+  ..
+:: down by one level
+  ~
+:: To home 🏡 directory
+  /
+:: To root 🌳 directory
+
+[~ :: can be used as path, to specifiy home 🏡 directory]
+
+mkdir
+:: creates new folder 📁
+  -p
+:: To create new folder with parent directory
+
+[It might create parent directory, if parent directory doesn't exists]
+
+touch
+:: creates file 📜
+
+[can create multiple files at once]
+[if file already exists, then it will update timestamp]
+
+xdg-open 🔓
+:: open file
+
+[sudo apt install xdg-utils :: To install package]
+
+rmdir
+:: remove only EMPTY directory
+
+rm 🚮
+:: remove files
+  -v
+:: with verbose
+  -r
+:: removes recurrsively [remove folder/directory and it's contents]
+  -i
+:: with prompts [with individual decision]
+
+mv 🚌
+:: move (or) rename
+mv a b
+:: rename file a --> b
+mv f/ F
+:: rename folder f --> F
+mv c d e/
+:: move c&d to e folder [:: can move single or multiple]
+
+[:: If last folder is directory/ move else rename]
+[:: (/) ? move : rename;]
+
+cp 🖨
+:: copy file & folder
+cp a b
+:: copy a --> b as new file
+cp -r f F
+:: copy folder f --> F as new folder
+[-r :: recurrsive]
+
+cp a.txt f/b.txt
+:: copy a --> b inside f folder
+[:: copy into specificied directory]
+
+head 🦁
+:: display top 10 line
+
+tail 🦂
+:: display bottom 10 line
+
+  -n 25
+:: 25 lines
+  -f
+:: continously listens & updates lively
